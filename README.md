@@ -1,1 +1,1 @@
-# test
+# A school lesson activity
