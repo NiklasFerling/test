@@ -8,6 +8,10 @@ body {
     font-family: calistoga
 }
 
+header {
+    background-color: rgb(44, 44, 44);
+}
+
 .info {
     font-weight: bold;
 }
@@ -17,7 +21,7 @@ body {
 }
 
 nav li {
-    color: black;
+    color: #fff;
     display: inline-block;
     padding: 10px;
 }
@@ -35,9 +39,9 @@ header a {
 }
 
 .active {
-    background-color: #000;
+    background-color: #fff;
 }
 
 nav li.active a {
-    color: #fff;
+    color: #000;
 }
