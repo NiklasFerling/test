@@ -30,7 +30,6 @@ section.hero {
 section.hero a,
 section.hero h1{
     margin: 16px;
-    display: ;
 }
 
 section.hero a {
@@ -97,6 +96,19 @@ nav li.active a {
 input#hamburger ~ label {
     cursor: pointer;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    text-align: center;
+}
+
+
 
 /* Contact Page*/
 
