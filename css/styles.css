@@ -22,8 +22,28 @@ body {
 }
 
 section:nth-of-type(2n+3) {
-    background-color: grey;
+    background-color: rgb(218, 218, 218);
 }
+
+.reviews__content {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    margin: auto;
+}
+
+.reviews__content > * {
+    margin: 0 40px;
+}
+
+div.reviews__content div span {
+    display: block;
+}
+
+section#reviews h2 {
+    text-align: center;
+}
+
 
 /*ELEMENTS*/
 
@@ -38,13 +58,14 @@ section#hero {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
 }
 
 section#hero div {
     text-align: center;
     position: absolute;
-    top: 64px;
-    left: 128px;
+    top: 10%;
+    left: 10%;
 }
 
 section#info {
@@ -54,22 +75,20 @@ section#info {
     justify-content: space-around;
 }
 
-section#info > * {
-
-}
-
-
 section#info img[alt="Hand Strumming Guitar"] {
     border-radius: 60px;
-    max-width: 400px;
+    max-width: 500px;
+}
+
+section#reviews {
+    padding: 40px;
+    
 }
 
 section#reviews img {
     max-width: 80px;
-}
-
-section#reviews section {
-    display: flex;
+    border-radius: 50%;
+    float: right;
 }
 
 header {
