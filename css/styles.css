@@ -12,13 +12,20 @@ body {
 /* BLOCKS*/
 
 .cta {
-    padding: 8px 16px;
+    padding: 8px 32px;
     border-radius: 8px;
     color: #fff;
     background-color: red;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+}
+
+.product-specific .cta {
+    display: block;
+    width: 180px;
+    text-align: center;
+    margin: auto;
 }
 
 section:nth-of-type(2n+3) {
@@ -39,6 +46,8 @@ section:nth-of-type(2n+3) {
 .product-specific {
     display: flex;
     max-width: 60%;
+    margin: 80px auto;
+    gap: 40px;
 }
 
 .product__img {
@@ -47,6 +56,20 @@ section:nth-of-type(2n+3) {
 
 .product-specific > * {
     flex: 1;
+}
+
+.product__thumbnails {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.product__thumbnails > * {
+    flex: 1;
+}
+
+.product-specific h1 {
+    margin-top: 0;
 }
 
 
