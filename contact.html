@@ -16,34 +16,39 @@
                 <li><a href="guitars.html">Guitars</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
-            <section>
-                <h1>Contact</h1>
-            </section>
         </nav>
     </header>
-    <main>
+    <main class="contact">
+        <section>
+            <h1>Contact</h1>
         </section>
         <section>
             <form method="GET">
-                <section id="contact">
-                    <label for="name">Full name</label>
-                    <input type="text" name="name" id="name" />
-                    <label for="email">Email </label>
-                    <input type="text" name="email" id="email" />
-                    <label for="guitar">Guitar</label>
-                    <select name="guitar" id="guitar">
-                        <option value="Adirondack Red">Adirondac Red</option>
-                        <option value="Adirondack Green">Adirondac Green</option>
-                        <option value="Adirondack Yellow">Adirondac Yellow</option>
-                        <option value="Adirondack Blue">Adirondac Blue</option>
-                    </select>
+                <div class="form-wrapper">
+                    <section id="contact">
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" id="name" />
+                        <label for="email">Email </label>
+                        <input type="text" name="email" id="email" />
+                        <label for="guitar">Guitar</label>
+                        <select name="guitar" id="guitar">
+                            <option value="Adirondack Red">Adirondac Red</option>
+                            <option value="Adirondack Green">Adirondac Green</option>
+                            <option value="Adirondack Yellow">Adirondac Yellow</option>
+                            <option value="Adirondack Blue">Adirondac Blue</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </section>
+                </div>
+                <div>
                     <input type="checkbox" name="email-updates" id="email-updates" />
                     <label for="email-updates">Sign up for email email updates.</label>
-                    <label for="message">Message</label>
-                </section>
-                <textarea name="message" id="message"></textarea>
-                <input type="submit" id="submit" value="Send now">
-              </form>
+                </div>
+                <input type="submit" id="submit" value="Send now" class="cta">
+            </form>
         </section>
     </main>
     <footer>
@@ -51,6 +56,3 @@
     </footer>
 </body>
 </html>
-
-
-/* 23:42 */

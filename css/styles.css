@@ -11,6 +11,7 @@ body {
 
 /* BLOCKS*/
 
+
 .cta {
     padding: 8px 32px;
     border-radius: 8px;
@@ -79,6 +80,13 @@ h1 {
     font-size: 48px;
 }
 
+footer {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
 section.hero {
     background-image: url(../images/home-header.jpg);
     width: 100%;
@@ -140,7 +148,7 @@ nav li {
     display: inline-block;
 }
 
- header a {
+header a {
     color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -163,13 +171,39 @@ header > * {
     display: none;
 }
 
+main.contact {
+    max-width: 60%;
+    margin: 80px auto;
+}
+
+main.contact h1 {
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.form-wrapper > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+textarea {
+    height: 100%;
+}
+
 
 
 /*MODIFIERS*/
-
-
-
-
-
-
-/* 24:54 */
