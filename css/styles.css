@@ -103,6 +103,7 @@ section:nth-of-type(2n+3) {
 .products p {
     grid-column: 1;
     margin: 4px;
+    font-size: 1em;
 }
 
 .cta-small {
@@ -117,10 +118,31 @@ section:nth-of-type(2n+3) {
 .product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.products img {
+    width: 100%;
+}
+
+main.guitars {
+    max-width: 60%;
+    margin: 80px auto;
+}
+
+main.guitars h1 {
+    text-align: center;
+    margin: 80px;
 }
 
 
 /*ELEMENTS*/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
 
 h1 {
     font-size: 48px;
