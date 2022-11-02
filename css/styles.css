@@ -3,205 +3,9 @@
     src: url('https://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0fs8wB.woff2')
 }
 
-body {
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
 
-/* BLOCKS*/
+/*Header*/
 
-
-.cta {
-    padding: 8px 32px;
-    border-radius: 8px;
-    color: #fff;
-    background-color: red;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.product-specific .cta {
-    display: block;
-    width: 180px;
-    text-align: center;
-    margin: auto;
-}
-
-section:nth-of-type(2n+3) {
-    background-color: rgb(218, 218, 218);
-}
-
-.reviews__content {
-    display: flex;
-    flex-direction: row;
-    max-width: 60%;
-    margin: auto;
-}
-
-.reviews__content > * {
-    margin: 0 40px;
-}
-
-.product-specific {
-    display: flex;
-    max-width: 60%;
-    margin: 80px auto;
-    gap: 40px;
-}
-
-.product__img {
-    width: 100%;
-}
-
-.product-specific > * {
-    flex: 1;
-}
-
-.product__thumbnails {
-    display: flex;
-    gap: 8px;
-    margin-top: 4px;
-}
-
-.product__thumbnails > * {
-    flex: 1;
-}
-
-.product-specific h1 {
-    margin-top: 0;
-}
-
-.featured {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    max-width: 60%;
-    margin: 40px auto 80px;
-    grid-gap: 16px;
-}
-
-.featured h2 {
-    grid-column: -1/1;
-}
-.featured img {
-    width: 100%;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-}
-
-.products img {
-    grid-column: -1/1;
-}
-
-.products h2,
-.products h3,
-.products p {
-    grid-column: 1;
-    margin: 4px;
-    font-size: 1em;
-}
-
-.cta-small {
-    padding: 8px 24px;
-    background-color: red;
-    border-radius: 8px;
-    grid-row: 2/4;
-    grid-column: 2;
-    color: #fff;
-}
-
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-}
-
-.products img {
-    width: 100%;
-}
-
-main.guitars {
-    max-width: 60%;
-    margin: 80px auto;
-}
-
-main.guitars h1 {
-    text-align: center;
-    margin: 80px;
-}
-
-
-/*ELEMENTS*/
-
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
-h1 {
-    font-size: 48px;
-}
-
-footer {
-    background-color: rgb(43, 43, 43);
-    color: #fff;
-    padding: 16px;
-    text-align: center;
-}
-
-section.hero {
-    background-image: url(../images/home-header.jpg);
-    width: 100%;
-    min-height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-}
-
-section.hero div {
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
-
-section#info {
-    display: flex;
-    max-width: 60%;
-    margin: 40px auto;
-    justify-content: space-around;
-}
-
-section#info img[alt="Hand Strumming Guitar"] {
-    border-radius: 60px;
-    max-width: 500px;
-}
-
-section#reviews {
-    padding: 40px;
-    
-}
-
-div.reviews__content div span {
-    display: block;
-}
-
-section#reviews h2 {
-    text-align: center;
-}
-
-section#reviews img {
-    max-width: 80px;
-    border-radius: 50%;
-    float: right;
-}
 
 header {
     color: #fff;
@@ -235,9 +39,185 @@ header > * {
     margin: 16px 32px;
 }
 
-#hamburger, label[for=hamburger] {
+#hamburger{
     display: none;
 }
+
+label:hover[for="hamburger"] {
+    cursor: pointer;
+}
+
+
+/*Footer*/
+
+
+footer {
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+
+/*GLOBAL*/
+
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.products h2,
+.products h3,
+.products p {
+    grid-column: 1;
+    margin: 4px;
+    font-size: 1em;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    max-width: 60%;
+    margin: 40px auto 80px;
+    grid-gap: 16px;
+}
+
+.cta {
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cta-small {
+    padding: 8px 24px;
+    background-color: red;
+    border-radius: 8px;
+    grid-row: 2/4;
+    grid-column: 2;
+    color: #fff;
+}
+
+.sale {
+    background-color: green;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 32px;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+img {
+    width: 100%;
+}
+
+/*Homepage*/
+
+
+section.hero {
+    background-image: url(../images/home-header.jpg);
+    width: 100%;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+section.hero div {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+section#info {
+    display: flex;
+    max-width: 60%;
+    margin: 40px auto;
+    justify-content: space-around;
+}
+
+section#info img[alt="Hand Strumming Guitar"] {
+    border-radius: 60px;
+}
+
+section#info div {
+    flex: 1;
+}
+
+section#reviews {
+    padding: 40px;
+}
+
+.home section:nth-of-type(2n+3) {
+    background-color: rgb(218, 218, 218);
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    margin: auto;
+}
+
+.reviews__content > * {
+    margin: 0 40px;
+}
+
+div.reviews__content div span {
+    display: block;
+}
+
+section#reviews h2 {
+    text-align: center;
+}
+
+section#reviews img {
+    max-width: 80px;
+    border-radius: 50%;
+    float: right;
+}
+
+.featured h2 {
+    grid-column: -1/1;
+}
+
+/*Guitars*/
+
+
+main.guitars {
+    max-width: 60%;
+    margin: 80px auto;
+}
+
+main.guitars h1 {
+    text-align: center;
+    margin: 80px;
+}
+
+
+/*Contact*/
+
 
 main.contact {
     max-width: 60%;
@@ -272,8 +252,44 @@ textarea {
     height: 100%;
 }
 
+/*Product Specific*/
 
 
+.product-specific .cta {
+    display: block;
+    width: 180px;
+    text-align: center;
+    margin: auto;
+}
+
+.product-specific {
+    display: flex;
+    max-width: 60%;
+    margin: 80px auto;
+    gap: 40px;
+}
+
+.product-specific > * {
+    flex: 1;
+}
+
+.product__thumbnails {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.product__thumbnails > * {
+    flex: 1;
+}
+
+.product-specific h1 {
+    margin-top: 0;
+}
+
+.products img {
+    grid-column: -1/1;
+}
 
 
-/*MODIFIERS*/
+/*Media Queries*/
