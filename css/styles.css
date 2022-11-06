@@ -8,21 +8,28 @@
 
 
 header {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto auto;
     color: #fff;
     background-color: rgb(43, 43, 43);
-    display: grid;
+    padding: 16px 32px 16px;
     align-items: center;
-    grid-auto-flow: column;
-    justify-content: space-between;
+    gap: 32px;
+    position: relative;
 }
 
 nav li {
     display: inline-block;
 }
 
+nav a {
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
 header a {
     color: #fff;
-    padding: 8px 16px;
     border-radius: 4px;
  }
 
@@ -35,8 +42,9 @@ a {
     text-decoration: none;
 }
 
-header > * {
-    margin: 16px 32px;
+nav ul {
+    display: inline-block;
+    padding: 0;
 }
 
 #hamburger{
@@ -299,12 +307,18 @@ textarea {
 
 @media (max-width: 600px) {
 
-    header ul {
+    nav {
         display: none;
     }
     
-    label[for="hamburger"] {
-        display: ;
+    nav li {
+        text-align: center;
+        display: block;
+        margin: 16px 0;
+    }
+
+    #hamburger:checked ~ nav {
+        display: block;
     }
 
     section#info {
